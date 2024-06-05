@@ -1,108 +1,67 @@
 
-// import styled from 'styled-components';
-// import { NavLink } from 'react-router-dom';
-
-
-// interface SidebarProps {
-//   isOpen: boolean;
-//   toggleSidebar: () => void;
-// }
-
-// const SidebarContainer = styled.div<{ isOpen: boolean }>`
-//   width: ${props => props.isOpen ? '250px' : '0'};
-//   height: 100vh;
-//   overflow-x: hidden;
-//   transition: width 0.3s ease;
-//   background-color: #282c34;
-//   position: fixed;
-//   top: 50px;
-//   left: 0;
-//   z-index: 1000;
-//   padding-top: 50px; 
-  
-
-//   @media (max-width: 768px) {
-//     width: ${props => props.isOpen ? '200px' : '0'};
-//   }
-// `;
-
-// const SidebarLink = styled(NavLink)`
-//   display: block;
-//   color: white;
-//   padding: 10px 20px;
-//   text-decoration: none;
-//   margin-botton:50px
-  
- 
-//   &:hover {
-//     background-color: #555;
-   
-//   }
-// `;
-
-// export const Sidebar = ({ isOpen }: SidebarProps) => {
-//   return (
-//     <SidebarContainer isOpen={isOpen}>
-//       {/* <MenuButton onClick={toggleSidebar} /> */}
-//       <SidebarLink to="/">Home</SidebarLink>
-//       <SidebarLink to="/about">About</SidebarLink>
-//       <SidebarLink to="/services">Services</SidebarLink>
-//       <SidebarLink to="/contact">Contact</SidebarLink>
-//     </SidebarContainer>
-//   );
-// };
-
-
-import styled from 'styled-components';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaInfo, FaServicestack, FaPhone } from 'react-icons/fa';
+import styled from 'styled-components';
+import { IonIcon } from '@ionic/react';
+import { menuOutline } from 'ionicons/icons';
+import { menuItems } from './Menusidebar/MenuItensSidebar'; 
 
 interface SidebarProps {
   isOpen: boolean;
-  toggleSidebar: () => void;
+  toggleSidebar: () => void; 
 }
 
 const SidebarContainer = styled.div<{ isOpen: boolean }>`
-  width: ${props => props.isOpen ? '250px' : '0'};
+  width: ${(props) => (props.isOpen ? '250px' : '60px')};
   height: 100vh;
+  transition: width 0.3s;
   overflow-x: hidden;
-  transition: width 0.3s ease;
-  background-color: #282c34;
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
-  z-index: 1000;
-  padding-top: 50px; 
-
-  @media (max-width: 768px) {
-    width: ${props => props.isOpen ? '200px' : '0'};
-  }
+  background-color: #282c34;
+  color: white;
 `;
 
-const SidebarLink = styled(NavLink)`
+const HamburgerButton = styled.div`
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: left;
+`;
+
+const SidebarMenuItems = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const SidebarItem = styled(NavLink)`
   display: flex;
   align-items: center;
-  color: white;
   padding: 10px 20px;
   text-decoration: none;
-  margin-bottom: 10px;
-  
-  svg {
-    margin-right: 10px;
-  }
+  color: white;
 
   &:hover {
-    background-color: #555;
+    background-color: #444;
   }
 `;
 
-export const Sidebar = ({ isOpen }: SidebarProps) => {
+
+export const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
-      <SidebarLink to="/"><FaHome />Home</SidebarLink>
-      <SidebarLink to="/about"><FaInfo />About</SidebarLink>
-      <SidebarLink to="/services"><FaServicestack />Services</SidebarLink>
-      <SidebarLink to="/contact"><FaPhone />Contact</SidebarLink>
+      <HamburgerButton onClick={toggleSidebar}>
+        <IonIcon icon={menuOutline} style={{ fontSize: '30px', color: 'white' }} />
+      </HamburgerButton>
+      {menuItems.map(({ icon, label, url }) => (
+        <SidebarMenuItems key={label}>
+          <SidebarItem to={url}>
+            <IonIcon icon={icon} style={{ marginRight: isOpen ? '10px' : '0px' }} />
+            {isOpen && <span>{label}</span>}
+          </SidebarItem>
+        </SidebarMenuItems>
+      ))}
     </SidebarContainer>
   );
 };
