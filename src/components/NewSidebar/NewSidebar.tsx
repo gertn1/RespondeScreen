@@ -1,9 +1,9 @@
-
 import React from 'react';
 import styled from 'styled-components';
-import { menuItems } from './Menusidebar/MenuItensSidebar';
-import { IonIcon } from '@ionic/react';
-import SidebarItem from './SidebarItem/SidebarItem';  
+import { menuItems } from '../App/SideBar/Menusidebar/MenuItensSidebar';
+import Item from './Item'
+import { SidebarProps } from '../../@types/NewSidebar/SidebarProps';
+
 
 const SidebarContainer = styled.div<{ isOpen: boolean }>`
   width: ${(props) => (props.isOpen ? '250px' : '60px')};
@@ -11,7 +11,7 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
   transition: width 0.3s;
   overflow-x: hidden;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   background-color: #282c34;
   color: white;
@@ -32,15 +32,12 @@ const SidebarMenuItems = styled.div`
   }
 `;
 
-export const Sidebar: React.FC<{ isOpen: boolean; toggleSidebar: () => void }> = ({ isOpen }) => {
+export const NewSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       {menuItems.map(({ label, url, icon }) => (
         <SidebarMenuItems key={label}>
-          <SidebarItem to={url} isOpen={isOpen}>
-            <IonIcon icon={icon} />
-            {isOpen && <span style={{ marginLeft: '10px' }}>{label}</span>}
-          </SidebarItem>
+          <Item url={url} icon={icon} label={label} isOpen={isOpen} />
         </SidebarMenuItems>
       ))}
     </SidebarContainer>
