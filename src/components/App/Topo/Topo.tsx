@@ -54,13 +54,14 @@ import styled from 'styled-components';
 
 const TopBar = styled.div`
   background-color: #282c34;
+  height:60px;
   color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;  // Garante que o TopBar ocupe toda a largura
-  box-sizing: border-box;  // Garante que o padding não afete a largura total
+  box-sizing: border-box; 
 
   @media (max-width: 768px) {
     padding: 10px;

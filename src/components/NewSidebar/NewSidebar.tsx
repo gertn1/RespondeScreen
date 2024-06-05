@@ -1,10 +1,69 @@
+
+// // import React from 'react';
+// // import styled from 'styled-components';
+// // import { menuItems } from './MenuItensSidebar';
+// // import Item from './Item';
+// // import { SidebarProps } from '../../@types/NewSidebar/SidebarProps';
+// // import { media } from '../../theme/styles/media';
+
+// // const SidebarContainer = styled.div<{ isOpen: boolean }>`
+// //  width: ${(props) => (props.isOpen ? '250px' : '60px')};
+// //   height: 100vh;
+// //   transition: width 0.3s;
+// //   overflow-x: hidden;
+// //   position: fixed;
+// //   top: 0;
+// //   left: 0;
+// //   background-color: red;
+// //   color: white;
+// //   padding-top: 50px;
+
+// //   @media ${media.tablet} {
+// //     width: ${(props) => (props.isOpen ? '230px' : '0')};
+// //     height: 100vh;
+// //   }
+
+// //   @media ${media.phone} {
+// //     width: ${(props) => (props.isOpen ? '200px' : '0')};
+// //     height: 100vh;
+// //   }
+// // `;
+
+// // const SidebarMenuItems = styled.div`
+// //   @media ${media.phone} {
+// //     display: flex;
+// //     flex-direction: column;
+// //     font-size: 0.8rem;
+// //   }
+
+// //   @media ${media.tablet} {
+// //     display: flex;
+// //     flex-direction: column;
+// //     font-size: 1rem;
+// //   }
+
+
+// // `;
+
+// // export const NewSidebar: React.FC<SidebarProps> = ({ isOpen}) => {
+// //   return (
+// //     <SidebarContainer isOpen={isOpen}>
+// //       {menuItems.map(({ label, url, icon }) => (
+// //         <SidebarMenuItems key={label}>
+// //           <Item url={url} icon={icon} label={label} isOpen={isOpen} />
+// //         </SidebarMenuItems>
+// //       ))}
+// //     </SidebarContainer>
+// //   );
+// // };
+
+
 // import React from 'react';
 // import styled from 'styled-components';
-// import { menuItems } from '../App/SideBar/Menusidebar/MenuItensSidebar';
-// import Item from './Item'
+// import { menuItems } from './MenuItensSidebar';
+// import Item from './Item';
 // import { SidebarProps } from '../../@types/NewSidebar/SidebarProps';
 // import { media } from '../../theme/styles/media';
-
 
 // const SidebarContainer = styled.div<{ isOpen: boolean }>`
 //   width: ${(props) => (props.isOpen ? '250px' : '60px')};
@@ -14,23 +73,38 @@
 //   position: fixed;
 //   top: 0;
 //   left: 0;
-//   background-color: #282c34;
+//   background-color: red;
 //   color: white;
 //   padding-top: 50px;
+  
+
+ 
 
 //   @media ${media.tablet} {
-//     width: ${(props) => (props.isOpen ? '250px' : '0')};
+//     width: ${(props) => (props.isOpen ? '230px' : '0')};
+//   }
+
+//   @media ${media.phone} {
+//     width: ${(props) => (props.isOpen ? '200px' : '0')};
 //   }
 // `;
 
 // const SidebarMenuItems = styled.div`
 //   display: flex;
 //   flex-direction: column;
-//   font-size: 1.3rem;
+//   font-size: 1rem;
+
+//   @media ${media.phone} {
+//     font-size: 0.8rem;
+//   }
 
 //   @media ${media.tablet} {
-//     font-size: 1.2rem; 
- 
+//     font-size: 1rem;
+//   }
+
+//   @media ${media.desktop} {
+//     font-size: 1.2rem;
+//   }
 // `;
 
 // export const NewSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
@@ -54,19 +128,20 @@ import { SidebarProps } from '../../@types/NewSidebar/SidebarProps';
 import { media } from '../../theme/styles/media';
 
 const SidebarContainer = styled.div<{ isOpen: boolean }>`
- width: ${(props) => (props.isOpen ? '250px' : '60px')};
+  width: ${(props) => (props.isOpen ? '250px' : '60px')};
   height: 100vh;
   transition: width 0.3s;
   overflow-x: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: #282c34;
   color: white;
   padding-top: 50px;
+  z-index: 1000;
 
   @media ${media.tablet} {
-    width: ${(props) => (props.isOpen ? '230px' : '0')};
+    width: ${(props) => (props.isOpen ? '255px' : '0')};
   }
 
   @media ${media.phone} {
@@ -75,31 +150,26 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
 `;
 
 const SidebarMenuItems = styled.div`
-  @media ${media.phone} {
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8rem;
-  }
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
 
-  @media ${media.tablet} {
-    display: flex;
-    flex-direction: column;
+  @media ${media.phone} {
     font-size: 1rem;
   }
 
-  @media ${media.desktop} {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
+  @media ${media.tablet} {
+    font-size: 1.5rem;
   }
+ 
 `;
 
-export const NewSidebar: React.FC<SidebarProps> = ({ isOpen}) => {
+export const NewSidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
       {menuItems.map(({ label, url, icon }) => (
-        <SidebarMenuItems key={label}>
-          <Item url={url} icon={icon} label={label} isOpen={isOpen} />
+        <SidebarMenuItems key={label} >
+          <Item  label={label} icon={icon} url={url} isOpen={isOpen} />
         </SidebarMenuItems>
       ))}
     </SidebarContainer>

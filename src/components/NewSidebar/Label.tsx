@@ -4,6 +4,7 @@ import { media } from '../../theme/styles/media';
 
 const StyledLabel = styled.span`
   margin-left: 10px;
+  font-size: 1.7rem;
 
   @media ${media.tablet} {
     font-size: 1.5rem;
