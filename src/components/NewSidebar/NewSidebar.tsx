@@ -70,7 +70,7 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
   }
 
   @media ${media.phone} {
-    width: ${(props) => (props.isOpen ? '180px' : '0')};
+    width: ${(props) => (props.isOpen ? '200px' : '0')};
   }
 `;
 

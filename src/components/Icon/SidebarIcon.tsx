@@ -25,11 +25,9 @@ const IconWrapper = styled.div<{ isOpen: boolean }>`
   }
 
   @media ${media.phone} {
-    left: ${props => props.isOpen ? '155px' : '-20px'};
+    left: ${props => props.isOpen ? '180px' : '-20px'};
     transition: left 0.3s ease-in-out;
   }
-
-  
 `;
  
 export const FloatingIcon: React.FC<FloatingIconProps> = ({ isOpen, toggleSidebar }) => {
