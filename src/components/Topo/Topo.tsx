@@ -14,6 +14,9 @@ const TopBar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;  // Garante que o TopBar ocupe toda a largura
+  box-sizing: border-box;  // Garante que o padding não afete a largura total
+
 
   @media (max-width: 768px) {
     padding: 10px;

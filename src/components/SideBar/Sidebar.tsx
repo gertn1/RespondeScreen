@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { IoMenu } from 'react-icons/io5';
+
 
 interface SidebarProps {
   isOpen: boolean;
@@ -13,24 +13,17 @@ const SidebarContainer = styled.div<{ isOpen: boolean }>`
   height: 100vh;
   overflow-x: hidden;
   transition: width 0.3s ease;
-  background-color: #333;
+  background-color: #282c34;
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   z-index: 1000;
+  padding-top: 50px; 
+  
 
   @media (max-width: 768px) {
     width: ${props => props.isOpen ? '200px' : '0'};
   }
-`;
-
-const MenuButton = styled(IoMenu)`
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 10px;
-  left: 10px;
 `;
 
 const SidebarLink = styled(NavLink)`
@@ -38,15 +31,19 @@ const SidebarLink = styled(NavLink)`
   color: white;
   padding: 10px 20px;
   text-decoration: none;
+  margin-botton:50px
+  
+ 
   &:hover {
     background-color: #555;
+   
   }
 `;
 
-export const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
+export const Sidebar = ({ isOpen }: SidebarProps) => {
   return (
     <SidebarContainer isOpen={isOpen}>
-      <MenuButton onClick={toggleSidebar} />
+      {/* <MenuButton onClick={toggleSidebar} /> */}
       <SidebarLink to="/">Home</SidebarLink>
       <SidebarLink to="/about">About</SidebarLink>
       <SidebarLink to="/services">Services</SidebarLink>
