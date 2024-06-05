@@ -15,7 +15,8 @@ const IconWrapper = styled.div<{ isOpen: boolean }>`
   cursor: pointer;
   z-index: 1000;
   padding: 10px;
-  transition: right 0.3s ease-in-out;
+  transition: left 0.18s ease-in-out;
+  
 `;
  
 export const FloatingIcon: React.FC<FloatingIconProps> = ({ isOpen, toggleSidebar }) => {
