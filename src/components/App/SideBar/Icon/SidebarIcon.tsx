@@ -16,7 +16,9 @@ const IconWrapper = styled.div<{ isOpen: boolean }>`
   z-index: 1000;
   padding: 10px;
   transition: left 0.18s ease-in-out;
-  
+  @media (max-width: 768px) {
+    left: ${(props) => (props.isOpen ? '155px' : '-20px')};
+  }
 `;
  
 export const FloatingIcon: React.FC<FloatingIconProps> = ({ isOpen, toggleSidebar }) => {
