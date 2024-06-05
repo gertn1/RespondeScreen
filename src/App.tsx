@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from './theme/globalstyle';
 import { NewSidebar } from './components/NewSidebar/NewSidebar';
 import { Topo } from './components/App/Topo/Topo';
-import { FloatingIcon } from './components/App/SideBar/Icon/SidebarIcon';
+import { FloatingIcon } from './components/Icon/SidebarIcon';
 
 const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

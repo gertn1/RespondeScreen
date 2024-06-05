@@ -1,6 +1,8 @@
 
 import styled from 'styled-components';
 import { IoResize } from 'react-icons/io5';
+import { media } from '../../theme/styles/media';
+
 
 interface FloatingIconProps {
     isOpen: boolean;
@@ -16,9 +18,18 @@ const IconWrapper = styled.div<{ isOpen: boolean }>`
   z-index: 1000;
   padding: 10px;
   transition: left 0.18s ease-in-out;
-  @media (max-width: 768px) {
-    left: ${(props) => (props.isOpen ? '155px' : '-20px')};
+
+  @media ${media.tablet} {
+    left: ${props => props.isOpen ? '200px' : '-20px'};
+    transition: left 0.3s ease-in-out;
   }
+
+  @media ${media.phone} {
+    left: ${props => props.isOpen ? '155px' : '-20px'};
+    transition: left 0.3s ease-in-out;
+  }
+
+  
 `;
  
 export const FloatingIcon: React.FC<FloatingIconProps> = ({ isOpen, toggleSidebar }) => {

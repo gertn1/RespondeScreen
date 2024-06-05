@@ -9,7 +9,7 @@ export const menuItems = [
   },
   {
     icon: businessOutline,
-    label: 'ORGANIZAÇÕES',
+    label: 'ABOUT',
     url: '/organizations',
   },
   {
