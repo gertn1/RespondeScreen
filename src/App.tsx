@@ -34,8 +34,8 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { GlobalStyle } from './theme/globalstyle';
 
-import { Sidebar } from './components/SideBar/Sidebar';
-import { Topo } from './components/Topo/Topo';
+import { Sidebar } from './components/App/SideBar/Sidebar';
+import { Topo } from './components/App/Topo/Topo';
 
 const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
