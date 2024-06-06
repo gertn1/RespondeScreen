@@ -1,6 +1,4 @@
 
-
-
 import styled from 'styled-components';
 import { media } from '../../theme/styles/media';
 import { IonIcon } from '@ionic/react';
@@ -70,17 +68,25 @@ export const ItemContainer = styled.a<{ isOpen: boolean }>`
     background-color: #575757;
   }
 `;
-// export const Label = styled.span<{ isOpen: boolean }>`
-//   margin-right: ${(props) => (props.isOpen ? '10px' : '0')};
-//   display: ${(props) => (props.isOpen ? 'inline' : 'none')};
-// `;
-
-
-export const StyledLabel = styled.span<{ isOpen: boolean }>`
+export const Label = styled.span<{ isOpen: boolean }>`
   margin-right: ${(props) => (props.isOpen ? '10px' : '0')};
   display: ${(props) => (props.isOpen ? 'inline' : 'none')};
 `;
 
 export const IconWrapper = styled.span`
   display: flex;
+`;
+
+
+export const StyledLabel = styled.span`
+  margin-left: 10px;
+  font-size: 1.7rem;
+
+  @media ${media.tablet} {
+    font-size: 1.5rem;
+  }
+
+  @media ${media.phone} {
+    font-size: 1.2rem;
+  }
 `;
