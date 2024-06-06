@@ -83,7 +83,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { IoResize } from 'react-icons/io5';
+import { IoArrowForward } from 'react-icons/io5';
 import { media } from '../../theme/styles/media';
 
 interface FloatingIconProps {
@@ -114,7 +114,7 @@ const IconWrapper = styled.div<{ isOpen: boolean }>`
 export const FloatingIcon: React.FC<FloatingIconProps> = ({ isOpen, toggleSidebar }) => {
   return (
     <IconWrapper isOpen={isOpen} onClick={toggleSidebar}>
-      <IoResize style={{ fontSize: '30px', color: 'white' }} />
+      <IoArrowForward style={{ fontSize: '30px', color: 'white' }} />
     </IconWrapper>
   );
 };
