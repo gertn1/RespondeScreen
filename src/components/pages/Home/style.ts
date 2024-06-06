@@ -30,7 +30,10 @@ export const StyledButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.3rem;
+  width: 300px;
+  height: 50px;
+ 
 
   &:hover {
     background-color: #0056b3;
@@ -38,12 +41,18 @@ export const StyledButton = styled.button`
 
   @media ${media.tablet} { 
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 1.3rem;
+     width: 200px;
+     height: 50px;
+      background-color: red;
   }
 
   @media ${media.phone} { 
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 16px;
+     width: 150px;
+     height: 50px;
+      background-color: green;
   }
 `;
 
@@ -51,7 +60,9 @@ export const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
   margin: 10px 0;
-
+  font-size: 1rem;
+  font-family:Arial;
+  
   th, td {
     padding: 10px;
     border: 1px solid #ddd;
@@ -59,20 +70,19 @@ export const StyledTable = styled.table`
   }
 
   th {
-    background-color: #f4f4f4;
+     background-color:  #282c34;
   }
 
-  @media ${media.tablet} { /* Tablet */
+  @media ${media.tablet} { 
     th, td {
       padding: 8px;
-      font-size: 14px;
+      font-size: 1.2rem;
     }
   }
-
    @media ${media.phone}{ /* Phone */
     th, td {
       padding: 6px;
-      font-size: 12px;
+      font-size: 1.2rem;
     }
 
     thead {

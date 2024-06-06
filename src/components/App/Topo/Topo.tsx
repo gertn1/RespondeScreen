@@ -81,7 +81,7 @@ const Logo = styled.div`
 export const Topo = () => {
   return (
     <TopBar>
-      <Logo>Your Logo Here</Logo>
+      <Logo>Logo</Logo>
     </TopBar>
   );
 };

@@ -29,14 +29,14 @@ export const SidebarContainer = styled.div<{ isOpen: boolean }>`
 export const SidebarMenuItems = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 
   @media ${media.tablet} {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   @media ${media.phone} {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 

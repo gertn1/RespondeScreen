@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { menuItems } from './MenuSidebar/ItensSidebar';
-import Item from './Item';
+import Item from './SidebarItem';
 import { SidebarProps } from '../../@types/SidebarProps/SidebarProps';
 import { SidebarContainer, SidebarMenuItems } from './styles';
 
