@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { IonIcon } from '@ionic/react';
-import { ItemProps } from '../../@types/Sidebar/ItemProps';
+import { ItemProps } from '../../@types/SidebarProps/ItemProps';
 import { ItemContainer, Label ,IconWrapper  } from './styles';
  
 

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { menuItems } from '../../NewSidebar/MenuItensSidebar';
+import { menuItems } from '../../NewSidebar/MenuSidebar/ItensSidebar';
 import { IonIcon } from '@ionic/react';
 import SidebarItem from './SidebarItem/SidebarItem';  
 

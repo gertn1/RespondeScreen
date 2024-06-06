@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { IconProps } from '../../@types/Sidebar/IconProps';
+import { IconProps } from '../../@types/SidebarProps/IconProps';
 import { StyledIonIcon } from './styles';
 
 
