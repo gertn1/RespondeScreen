@@ -5,21 +5,21 @@ export const menuItems = [
   {
     icon: homeOutline,
     label: 'INÍCIO',
-    url: '/',
+    url: '#',
   },
   {
     icon: businessOutline,
     label: 'ABOUT',
-    url: '/organizations',
+    url: '#',
   },
   {
     icon: peopleOutline,
     label: 'PARCEIROS',
-    url: '/partners',
+    url: '#',
   },
   {
     icon: cashOutline,
     label: 'CONTAS',
-    url: '/accounts',
+    url: '#',
   },
 ];

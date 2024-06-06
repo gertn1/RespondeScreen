@@ -7,10 +7,11 @@ import { ItemContainer, Label ,IconWrapper  } from './styles';
 
 const Item: React.FC<ItemProps> = ({ url, icon, label, isOpen }) => (
   <ItemContainer href={url} isOpen={isOpen}>
-     <Label isOpen={isOpen}>{label}</Label>
+    {/* Trocar icons de posicao  */}
       <IconWrapper>
       <IonIcon icon={icon} />
     </IconWrapper>
+    <Label isOpen={isOpen}>{label}</Label>
   </ItemContainer>
 );
 
