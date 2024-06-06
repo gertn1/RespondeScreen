@@ -239,6 +239,9 @@ import { NewSidebar } from './components/NewSidebar/NewSidebar';
 import { Topo } from './components/App/Topo/Topo';
 import {FloatingIcon} from './components/Icon/SidebarIcon';
 import Home from './components/pages/home';
+import { Backdrop } from './components/NewSidebar/styles';
+
+
 
 const App: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -269,6 +272,7 @@ const App: React.FC = () => {
       <NewSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <FloatingIcon isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Home isOpen={isSidebarOpen} />
+      <Backdrop isOpen={isSidebarOpen} onClick={toggleSidebar} />
     </>
   );
 };

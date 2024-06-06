@@ -1,7 +1,7 @@
 const sizes = {
    
-    tablet: 900,
-    phone: 576,
+    tablet: 1280,
+    phone: 640,
   };
   
   export const media = {

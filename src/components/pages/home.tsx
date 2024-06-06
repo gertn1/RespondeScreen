@@ -1,143 +1,23 @@
-// // // import React from 'react';
-// // // import Button from './Button';
-// // // import Table from './Table';
-// // // import styled from 'styled-components';
-
-// // // const HomeContainer = styled.div<{ isOpen: boolean }>`
-// // //   padding: 30px;
-// // //   transition: margin-left 0.3s ease;
-// // //   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '60px')};
-// // // `;
-
-// // // const data = [
-// // //   { Name: 'John Doe', Age: 28, Job: 'Developer' },
-// // //   { Name: 'Jane Smith', Age: 34, Job: 'Designer' },
-// // //   { Name: 'Sam Johnson', Age: 45, Job: 'Manager' }
-// // // ];
-
-// // // interface HomeProps {
-// // //   isOpen: boolean;
-// // // }
-
-// // // const Home: React.FC<HomeProps> = ({ isOpen }) => {
-// // //   const handleClick = () => {
-// // //     alert('Button clicked!');
-// // //   };
-
-// // //   return (
-// // //     <HomeContainer isOpen={isOpen}>
-// // //       <h1>Home Page</h1>
-// // //       <Button onClick={handleClick} label="Click Me" />
-// // //       <Table data={data} />
-// // //     </HomeContainer>
-// // //   );
-// // // };
-
-// // // export default Home;
-
-
-// // import React from 'react';
-// // import Button from './Button';
-// // import Table from './Table';
-// // import styled from 'styled-components';
-
-// // const HomeContainer = styled.div<{ isOpen: boolean }>`
-// //   padding: 30px;
-// //   transition: margin-left 0.3s ease;
-// //   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '60px')};
-// // `;
-
-// // const data = [
-// //   { Name: 'John Doe', Age: 28, Job: 'Developer' },
-// //   { Name: 'Jane Smith', Age: 34, Job: 'Designer' },
-// //   { Name: 'Sam Johnson', Age: 45, Job: 'Manager' }
-// // ];
-
-// // interface HomeProps {
-// //   isOpen: boolean;
-// // }
-
-// // const Home: React.FC<HomeProps> = ({ isOpen }) => {
-// //   const handleClick = () => {
-// //     alert('Button clicked!');
-// //   };
-
-// //   return (
-// //     <HomeContainer isOpen={isOpen}>
-// //       <h1>Home Page</h1>
-// //       <Button onClick={handleClick} label="Click Me" />
-// //       <Table data={data} />
-// //     </HomeContainer>
-// //   );
-// // };
-
-// // export default Home;
-
-
-// import React from 'react';
-// import Button from './Button';
-// import Table from './Table';
-// import styled from 'styled-components';
-
-// const HomeContainer = styled.div<{ isOpen: boolean }>`
-//   padding: 30px;
-//   transition: margin-left 0.3s ease;
-//   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '60px')};
-
-//   @media (max-width: 768px) { /* Tablet */
-//     margin-left: ${({ isOpen }) => (isOpen ? '250px' : '0')};
-//     padding: 20px;
-//   }
-
-//   @media (max-width: 480px) { /* Phone */
-//     margin-left: 0;
-//     padding: 10px;
-//   }
-// `;
-
-// const data = [
-//   { Name: 'John Doe', Age: 28, Job: 'Developer' },
-//   { Name: 'Jane Smith', Age: 34, Job: 'Designer' },
-//   { Name: 'Sam Johnson', Age: 45, Job: 'Manager' }
-// ];
-
-// interface HomeProps {
-//   isOpen: boolean;
-// }
-
-// const Home: React.FC<HomeProps> = ({ isOpen }) => {
-//   const handleClick = () => {
-//     alert('Button clicked!');
-//   };
-
-//   return (
-//     <HomeContainer isOpen={isOpen}>
-//       <h1>Home Page</h1>
-//       <Button onClick={handleClick} label="Click Me" />
-//       <Table data={data} />
-//     </HomeContainer>
-//   );
-// };
-
-// export default Home;
-
 
 import React from 'react';
 import Button from './Button';
 import Table from './Table';
 import styled from 'styled-components';
+import { media } from '../../theme/styles/media';
 
 const HomeContainer = styled.div<{ isOpen: boolean }>`
   padding: 30px;
   transition: margin-left 0.3s ease;
   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '60px')};
+  
 
-  @media (max-width: 768px) { /* Tablet */
-    margin-left: ${({ isOpen }) => (isOpen ? '250px' : '0')};
+  @media ${media.tablet} {
+   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '0')};
     padding: 20px;
+    margin-left: 0;
   }
 
-  @media (max-width: 480px) { /* Phone */
+  @media ${media.phone}
     margin-left: 0;
     padding: 10px;
   }
