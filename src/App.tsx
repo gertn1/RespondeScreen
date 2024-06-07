@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { GlobalStyle } from './theme/globalstyle';
-import { Sidebar } from './components/NewSidebar/Sidebar/Sidebar';
+import { Sidebar } from './components/Sidebar/Sidebar/Sidebar';
 import { Topo } from './components/App/Topo/Topo';
-import {FloatingIcon} from './components/NewSidebar/SidebarIcon/SidebarIcon';
+import {FloatingIcon} from './components/Sidebar/SidebarIcon/SidebarIcon';
 import Home from './components/pages/Home/IndexHome';
 // import { Backdrop } from './components/NewSidebar/styles';
 
