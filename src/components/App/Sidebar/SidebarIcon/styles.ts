@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { media } from '../../../theme/styles/media';
+import { media } from '../../../../theme/styles/media';
 
 export const IconWrapper = styled.div<{ isOpen: boolean }>`
   left: ${props => props.isOpen ? '225px' : '37px'};

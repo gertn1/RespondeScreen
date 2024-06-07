@@ -2,7 +2,7 @@
 import React from 'react';
 import { menuItems } from '../MenuSidebar/ItensSidebar';
 import SidebarItems from '../SidebarItems/SidebarItems'
-import { SidebarProps } from '../../../@types/SidebarProps/SidebarProps';
+import { SidebarProps } from '../../../../@types/SidebarProps/SidebarProps';
 import { SidebarContainer, SidebarMenuItems } from './styles';
 
 

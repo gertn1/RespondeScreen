@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { media } from '../../../theme/styles/media';
+import { media } from '../../../../theme/styles/media';
 
 export const SidebarContainer = styled.div<{ isOpen: boolean }>`
 
