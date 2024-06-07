@@ -1,9 +1,9 @@
 
 import styled from 'styled-components';
 import { media } from '../../theme/styles/media';
-import { IonIcon } from '@ionic/react';
 
 export const SidebarContainer = styled.div<{ isOpen: boolean }>`
+
   width: ${(props) => (props.isOpen ? '250px' : '60px')};
   height: 100vh;
   transition: width 0.3s;
@@ -53,26 +53,7 @@ export const Backdrop = styled.div<{ isOpen: boolean }>`
   z-index: 999;
 `;
 
-
-
-export const StyledIonIcon = styled(IonIcon)<{ isOpen: boolean }>`
-  margin-right: ${(props) => (props.isOpen ? '5px' : '0px')};
-  transition: margin-right 0.3s;
-  font-size: 1.8rem;
-
-  @media ${media.tablet} {
-    font-size: 1.5rem;
-    margin-right: ${(props) => (props.isOpen ? '5px' : '0')};
-  }
-  @media ${media.phone} {
-    font-size: 1rem;
-    margin-right: ${(props) => (props.isOpen ? '0' : '0')};
-  }
-`;
-
-
-
-export const ItemContainer = styled.a<{ isOpen: boolean }>`
+export const ItemsContainer = styled.a<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -92,16 +73,3 @@ export const IconWrapper = styled.span`
   display: flex;
 `;
 
-
-export const StyledLabel = styled.span`
-  margin-left: 10px;
-  font-size: 1.7rem;
-
-  @media ${media.tablet} {
-    font-size: 1.5rem;
-  }
-
-  @media ${media.phone} {
-    font-size: 1.2rem;
-  }
-`;
