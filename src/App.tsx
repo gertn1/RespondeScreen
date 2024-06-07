@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { GlobalStyle } from './theme/globalstyle';
 import { Sidebar } from './components/NewSidebar/Sidebar';
 import { Topo } from './components/App/Topo/Topo';
-import {FloatingIcon} from './components/Icon/SidebarIcon';
+import {FloatingIcon} from './components/NewSidebar/SidebarIcon/SidebarIcon';
 import Home from './components/pages/Home/IndexHome';
 import { Backdrop } from './components/NewSidebar/styles';
 
