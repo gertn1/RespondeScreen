@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { StyledTable } from './style';
-import { TableProps } from '../../../@types/HomeProps/TableProps';
+import { StyledTable } from './styles';
+import { TableProps } from '../../../../@types/HomeProps/TableProps';
 
 
 const Table: React.FC<TableProps> = ({ data }) => {

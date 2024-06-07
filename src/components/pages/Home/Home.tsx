@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Button from './ButtonHome/ButtonHome';
-import Table from './TableHome';
+import Table from './TableHome/TableHome';
 import { data } from './DataHome/Data';
 import { HomeContainer } from './style';
 import { HomeProps } from '../../../@types/HomeProps/HomeProps';
