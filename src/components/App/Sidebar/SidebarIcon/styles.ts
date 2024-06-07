@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import { media } from '../../../../theme/styles/media';
 
 export const IconWrapper = styled.div<{ isOpen: boolean }>`
-  left: ${props => props.isOpen ? '225px' : '37px'};
+  left: ${props => props.isOpen ? '225px' : '37px'}; //Define posicao hozontal do icone
   position: fixed;
   display: block;
-  top: 50%;
+  top: 50%;    //centraliza na vertical
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1001;

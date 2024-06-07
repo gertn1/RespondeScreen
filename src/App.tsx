@@ -4,7 +4,7 @@ import { GlobalStyle } from './theme/globalstyle';
 import { Sidebar } from './components/App/Sidebar/Sidebar/Sidebar';
 import { Topo } from './components/App/Topo/Topo';
 import {SidebarIcon} from './components/App/Sidebar/SidebarIcon/SidebarIcon';
-import Home from './components/pages/Home/IndexHome';
+import Home from './components/pages/Home/Home';
 // import { Backdrop } from './components/NewSidebar/styles';
 
 const App: React.FC = () => {
@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <SidebarIcon isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Home isOpen={isSidebarOpen} />
-      {/* <Backdrop isOpen={isSidebarOpen} onClick={toggleSidebar} /> */}
+      
     </>
   );
 };

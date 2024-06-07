@@ -11,7 +11,8 @@ interface SidebarIconProps {
 
 export const SidebarIcon: React.FC<SidebarIconProps> = ({ isOpen, toggleSidebar }) => {
   return (
-    <IconWrapper isOpen={isOpen} onClick={toggleSidebar}>
+    // isOpen Movimenta junto com sidebar
+    <IconWrapper isOpen={isOpen} onClick={toggleSidebar}>  
       <IoArrowForward style={{ fontSize: '30px', color: 'white' }} />
     </IconWrapper>
   );
