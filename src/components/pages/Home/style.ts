@@ -63,6 +63,9 @@ export const StyledTable = styled.table`
   font-size: 1rem;
   font-family:Arial;
   
+  // th-Cabeçalho de cada coluna
+  //td-Célula da tabela
+
   th, td {
     padding: 10px;
     border: 1px solid #ddd;
@@ -79,7 +82,7 @@ export const StyledTable = styled.table`
       font-size: 1.2rem;
     }
   }
-   @media ${media.phone}{ /* Phone */
+   @media ${media.phone}{ 
     th, td {
       padding: 6px;
       font-size: 1.2rem;
@@ -115,3 +118,4 @@ export const StyledTable = styled.table`
     }
   }
 `;
+

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Button from './ButtonHome';
+import Button from './ButtonHome/ButtonHome';
 import Table from './TableHome';
 import { data } from './DataHome/Data';
 import { HomeContainer } from './style';
