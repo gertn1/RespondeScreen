@@ -4,7 +4,7 @@ import { GlobalStyle } from './theme/globalstyle';
 import { Sidebar } from './components/App/Sidebar/Sidebar/Sidebar';
 import { Topo } from './components/App/Topo/Topo';
 import {SidebarIcon} from './components/App/Sidebar/SidebarIcon/SidebarIcon';
-import Home from './components/pages/Home/Home';
+import Home from './components/pages/Home/IndexHome/Home';
 // import { Backdrop } from './components/NewSidebar/styles';
 
 const App: React.FC = () => {
