@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { menuItems } from './MenuSidebar/ItensSidebar';
-import SidebarItems from './SidebarItems';
-import { SidebarProps } from '../../@types/SidebarProps/SidebarProps';
+import { menuItems } from '../MenuSidebar/ItensSidebar';
+import SidebarItems from '../SidebarItems';
+import { SidebarProps } from '../../../@types/SidebarProps/SidebarProps';
 import { SidebarContainer, SidebarMenuItems } from './styles';
 
 
