@@ -6,8 +6,8 @@ import { ItemsProps } from '../../../../@types/SidebarProps/ItemsProps';
 
 
 
-const SidebarItems: FC<ItemsProps> = ({ url, icon, label, isOpen }) => (
-  <ItemsContainer href={url} isOpen={isOpen}>
+const SidebarItems: FC<ItemsProps> = ({icon, label, isOpen }) => (
+  <ItemsContainer >
       <IconWrapper>
       <IonIcon icon={icon} />
     </IconWrapper>

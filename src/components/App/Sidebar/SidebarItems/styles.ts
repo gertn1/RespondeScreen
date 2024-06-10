@@ -1,7 +1,7 @@
 
 import styled from 'styled-components';
 
-export const ItemsContainer = styled.a<{ isOpen: boolean }>`
+export const ItemsContainer = styled.a`
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -15,7 +15,6 @@ export const ItemsContainer = styled.a<{ isOpen: boolean }>`
 `;
 
 export const Label = styled.span<{ isOpen: boolean }>`
-  margin-right: ${(props) => (props.isOpen ? '10px' : '0')};
   display: ${(props) => (props.isOpen ? 'inline' : 'none')};
 `;
 

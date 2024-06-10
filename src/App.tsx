@@ -22,7 +22,6 @@ const App: React.FC = () => {
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <SidebarIcon isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Home isOpen={isSidebarOpen} />
-      
     </>
   );
 };

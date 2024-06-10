@@ -13,8 +13,7 @@ export const SidebarContainer = styled.div<{ isOpen: boolean }>`
   background-color: #282c34;
   color: white;
   padding-top: 50px;
-  z-index: 1000;
-
+ 
   @media ${media.tablet} {
     width: ${(props) => (props.isOpen ? '255px' : '0')};
   }
@@ -39,13 +38,13 @@ export const SidebarMenuItems = styled.div`
   }
 `;
 
-export const Backdrop = styled.div<{ isOpen: boolean }>`
-  display: ${(props) => (props.isOpen ? 'block' : 'none')};
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-`;
+// export const Backdrop = styled.div<{ isOpen: boolean }>`
+//   display: ${(props) => (props.isOpen ? 'block' : 'none')};
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 999;
+// `;

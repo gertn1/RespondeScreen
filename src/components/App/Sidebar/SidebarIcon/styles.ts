@@ -6,7 +6,7 @@ export const IconWrapper = styled.div<{ isOpen: boolean }>`
   left: ${props => props.isOpen ? '225px' : '37px'}; //Define posicao hozontal do icone
   position: fixed;
   display: block;
-  top: 50%;    //centraliza na vertical
+  top: 50%; 
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1001;
