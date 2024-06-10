@@ -9,9 +9,6 @@ export const StyledTable = styled.table`
   font-size: 1rem;
   font-family:Arial;
   
-  // th-Cabeçalho de cada coluna
-  //td-Célula da tabela
-
   th, td {
     padding: 10px;
     border: 1px solid #ddd;

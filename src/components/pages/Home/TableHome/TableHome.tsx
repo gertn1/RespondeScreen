@@ -4,7 +4,7 @@ import { StyledTable } from './styles';
 import { TableProps } from '../../../../@types/HomeProps/TableProps';
 
 
-const Table: React.FC<TableProps> = ({ data }) => {
+const TableHome: React.FC<TableProps> = ({ data }) => {
   return (
     <StyledTable>
       <thead>
@@ -27,4 +27,4 @@ const Table: React.FC<TableProps> = ({ data }) => {
   );
 };
 
-export default Table;
+export default TableHome;
