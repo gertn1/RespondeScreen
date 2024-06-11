@@ -1,15 +1,13 @@
-
-import React from 'react';
-import ButtonHome from '../ButtonHome/ButtonHome';
-import TableHome from '../TableHome/TableHome';
-import { data } from '../DataHome/Data';
-import { HomeContainer } from './styles';
-import { HomeProps } from '../../../../@types/HomeProps/HomeProps';
-
+import React from "react";
+import ButtonHome from "../ButtonHome/ButtonHome";
+import TableHome from "../TableHome/TableHome";
+import { data } from "../DataHome/Data";
+import { HomeContainer } from "./styles";
+import { HomeProps } from "../../../../@types/HomeProps/HomeProps";
 
 const Home: React.FC<HomeProps> = ({ isOpen }) => {
   const handleClick = () => {
-    alert('Button clicked!');
+    alert("Button clicked!");
   };
 
   return (

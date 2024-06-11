@@ -1,25 +1,30 @@
-
-import { businessOutline, cashOutline, homeOutline, peopleOutline } from 'ionicons/icons';
+import {
+  businessOutline,
+  cashOutline,
+  homeOutline,
+  peopleOutline,
+} from "ionicons/icons";
 
 export const menuItems = [
   {
     icon: homeOutline,
-    label: 'INÍCIO',
-    url: '#',
+    label: "INÍCIO",
+    url: "#",
   },
   {
     icon: businessOutline,
-    label: 'ABOUT',
-    url: '#',
+    label: "ABOUT",
+    url: "#",
   },
   {
     icon: peopleOutline,
-    label: 'PARCEIROS',
-    url: '#',
+    label: "PARCEIROS",
+    url: "#",
   },
+
   {
     icon: cashOutline,
-    label: 'CONTAS',
-    url: '#',
+    label: "CONTAS",
+    url: "#",
   },
 ];

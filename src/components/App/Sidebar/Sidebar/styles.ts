@@ -29,6 +29,7 @@ export const SidebarMenuItems = styled.div`
   flex-direction: column;
   font-size: 1.3rem;
 
+
   @media ${media.tablet} {
     font-size: 1.3rem;
   }

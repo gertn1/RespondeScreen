@@ -1,8 +1,6 @@
-
-import React from 'react';
-import { StyledTable } from './styles';
-import { TableProps } from '../../../../@types/HomeProps/TableProps';
-
+import React from "react";
+import { StyledTable } from "./styles";
+import { TableProps } from "../../../../@types/HomeProps/TableProps";
 
 const TableHome: React.FC<TableProps> = ({ data }) => {
   return (
@@ -18,7 +16,9 @@ const TableHome: React.FC<TableProps> = ({ data }) => {
         {data.map((row, index) => (
           <tr key={index}>
             {Object.entries(row).map(([key, value], i) => (
-              <td key={i} data-label={key}>{value}</td>
+              <td key={i} data-label={key}>
+                {value}
+              </td>
             ))}
           </tr>
         ))}

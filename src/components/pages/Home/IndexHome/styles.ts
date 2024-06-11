@@ -15,7 +15,7 @@ export const HomeContainer = styled.div<{ isOpen: boolean }>`
     margin-left: 0;
   }
 
-  @media ${media.phone}
+  @media ${media.phone} {
     margin-left: 0;
     padding: 10px;
   }
