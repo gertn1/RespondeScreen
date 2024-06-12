@@ -1,9 +1,8 @@
 import React from "react";
 import ButtonHome from "../ButtonHome/ButtonHome";
-import TableHome from "../TableHome/TableHome";
-import { data } from "../DataHome/Data";
 import { HomeContainer } from "./styles";
 import { HomeProps } from "../../../../@types/HomeProps/HomeProps";
+import FormHome from "../FormHome/FormHome";
 
 const Home: React.FC<HomeProps> = ({ isOpen }) => {
   const handleClick = () => {
@@ -14,7 +13,7 @@ const Home: React.FC<HomeProps> = ({ isOpen }) => {
     <HomeContainer isOpen={isOpen}>
       <h1>Home Page</h1>
       <ButtonHome onClick={handleClick} label="Click Me" />
-      <TableHome data={data} />
+      <FormHome />
     </HomeContainer>
   );
 };
