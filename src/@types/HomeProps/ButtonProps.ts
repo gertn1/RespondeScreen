@@ -1,4 +1,3 @@
-export interface ButtonProps {
-    onClick: () => void;
+export interface ButtonProps {    
     label: string;
   }

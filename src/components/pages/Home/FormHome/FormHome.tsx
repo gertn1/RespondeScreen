@@ -1,59 +1,31 @@
 import React from "react";
+
 import {
   StyledForm,
   StyledInput,
   StyledTextArea,
-  StyledButton,
   StyledFieldSet,
-  StyledLegend,
   StyledFieldWrapper,
 } from "./styles";
+import ButtonHome from "../ButtonHome/ButtonHome";
 
 const FormHome: React.FC = () => {
   return (
     <StyledForm>
       <StyledFieldSet>
-        <StyledLegend>Informações Pessoais</StyledLegend>
         <StyledFieldWrapper>
-          <label>
-            Nome:
-            <StyledInput type="text" name="name" />
-          </label>
-          <label>
-            Email:
-            <StyledInput type="email" name="email" />
-          </label>
-          <label>
-            Telefone:
-            <StyledInput type="tel" name="phone" />
-          </label>
+          <StyledInput type="text" name="name" placeholder="Nome" />
+          <StyledInput type="email" name="email" placeholder="Email" />
+          <StyledInput type="tel" name="phone" placeholder="Telefone" />
+          <StyledInput type="text" name="address" placeholder="Endereco" />
+          <StyledInput type="text" name="city" placeholder="Cidade" />
+          <StyledInput type="text" name="state" placeholder="Estado" />
         </StyledFieldWrapper>
       </StyledFieldSet>
       <StyledFieldSet>
-        <StyledLegend>Endereço</StyledLegend>
-        <StyledFieldWrapper>
-          <label>
-            Endereço:
-            <StyledInput type="text" name="address" />
-          </label>
-          <label>
-            Cidade:
-            <StyledInput type="text" name="city" />
-          </label>
-          <label>
-            Estado:
-            <StyledInput type="text" name="state" />
-          </label>
-        </StyledFieldWrapper>
+        <StyledTextArea name="message" placeholder="Mensagem" />
       </StyledFieldSet>
-      <StyledFieldSet>
-        <StyledLegend>Mensagem</StyledLegend>
-        <label>
-          Mensagem:
-          <StyledTextArea name="message" rows={5} />
-        </label>
-      </StyledFieldSet>
-      <StyledButton type="submit">Enviar</StyledButton>
+      <ButtonHome label="Enviar" />
     </StyledForm>
   );
 };
