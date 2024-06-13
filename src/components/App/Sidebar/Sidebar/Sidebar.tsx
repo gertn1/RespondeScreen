@@ -10,7 +10,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     <SidebarContainer isOpen={isOpen}>
       <SidebarIcon isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {menuItems.map(({ label, url, icon }) => (
-        <SidebarMenuItems>
+        <SidebarMenuItems key={url}>
           <SidebarItems label={label} icon={icon} url={url} isOpen={isOpen} />
         </SidebarMenuItems>
       ))}

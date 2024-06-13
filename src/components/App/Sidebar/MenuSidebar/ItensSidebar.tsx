@@ -14,17 +14,16 @@ export const menuItems = [
   {
     icon: businessOutline,
     label: "ABOUT",
-    url: "#",
+    url: "/about",
   },
   {
     icon: peopleOutline,
     label: "PARCEIROS",
-    url: "#",
+    url: "#/parceiros",
   },
-
   {
     icon: cashOutline,
     label: "CONTAS",
-    url: "#",
+    url: "#/contas",
   },
 ];
