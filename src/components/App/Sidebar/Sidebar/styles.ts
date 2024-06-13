@@ -16,6 +16,7 @@ export const SidebarContainer = styled.div<{ $isopen: boolean }>`
  
   @media ${media.tablet} {
     width: ${(props) => (props.$isopen ? '255px' : '0')};
+    z-index: 1001;
   }
 
   @media ${media.phone} {
