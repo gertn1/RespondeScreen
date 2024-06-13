@@ -9,7 +9,7 @@ export const menuItems = [
   {
     icon: homeOutline,
     label: "INÍCIO",
-    url: "#",
+    url: "/home",
   },
   {
     icon: businessOutline,
