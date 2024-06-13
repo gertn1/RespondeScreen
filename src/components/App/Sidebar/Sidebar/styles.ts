@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { media } from '../../../../theme/styles/media';
 
-export const SidebarContainer = styled.div<{ isopen: boolean }>`
+export const SidebarContainer = styled.div<{ $isopen: boolean }>`
 
-  width: ${(props) => (props.isopen ? '250px' : '60px')};
+ width: ${(props) => (props.$isopen ? '250px' : '60px')};
   height: 100vh;
   transition: width 0.3s;
   overflow-x: hidden;
@@ -15,11 +15,11 @@ export const SidebarContainer = styled.div<{ isopen: boolean }>`
   padding-top: 50px;
  
   @media ${media.tablet} {
-    width: ${(props) => (props.isopen ? '255px' : '0')};
+    width: ${(props) => (props.$isopen ? '255px' : '0')};
   }
 
   @media ${media.phone} {
-    width: ${(props) => (props.isopen ? '200px' : '0')};
+    width: ${(props) => (props.$isopen ? '200px' : '0')};
       z-index: 1001;
   }
 `;

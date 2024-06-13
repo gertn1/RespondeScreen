@@ -1,19 +1,14 @@
 import styled from 'styled-components';
 import { media } from '../../../../theme/styles/media';
 
-
-
-export const HomeContainer = styled.div<{ isopen: boolean }>`
+export const HomeContainer = styled.div<{ $isopen: boolean }>`
   padding: 30px;
   transition: margin-left 0.3s ease;
-  margin-left: ${({ isopen }) => (isopen ? '250px' : '60px')};
+  margin-left: ${({ $isopen }) => ($isopen ? '250px' : '60px')};
   
-
   @media ${media.tablet} {
-   margin-left: ${({ isopen }) => (isopen ? '250px' : '0')};
+    margin-left: ${({ $isopen }) => ($isopen ? '250px' : '0')};
     padding: 20px;
-    margin-left: 0;
-
   }
 
   @media ${media.phone} {
@@ -21,6 +16,3 @@ export const HomeContainer = styled.div<{ isopen: boolean }>`
     padding: 10px;
   }
 `;
-
-
-

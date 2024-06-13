@@ -7,7 +7,7 @@ import { SidebarContainer, SidebarMenuItems } from "./styles";
 
 export const Sidebar: React.FC<SidebarProps> = ({ isopen, toggleSidebar }) => {
   return (
-    <SidebarContainer isopen={isopen}>
+    <SidebarContainer $isopen={isopen}>
       <SidebarIcon isopen={isopen} toggleSidebar={toggleSidebar} />
       {menuItems.map(({ label, url, icon }) => (
         <SidebarMenuItems key={url}>

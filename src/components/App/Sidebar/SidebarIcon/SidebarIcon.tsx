@@ -5,7 +5,7 @@ import { SidebarIconProps } from "../../../../@types/SidebarProps/SidebarIconPro
 
 const SidebarIcon: React.FC<SidebarIconProps> = ({ isopen, toggleSidebar }) => {
   return (
-    <IconWrapper isopen={isopen} onClick={toggleSidebar}>
+    <IconWrapper $isopen={isopen} onClick={toggleSidebar}>
       {isopen ? (
         <IoArrowBack style={{ fontSize: "30px", color: "white" }} />
       ) : (

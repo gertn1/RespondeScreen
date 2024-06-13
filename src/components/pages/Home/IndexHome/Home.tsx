@@ -6,7 +6,7 @@ import FormHome from "../FormHome/FormHome";
 
 const Home: React.FC<HomeProps> = ({ isopen }) => {
   return (
-    <HomeContainer isopen={isopen}>
+    <HomeContainer $isopen={isopen}>
       <h1>Home Page</h1>
       <ButtonHome label="Click Me" />
       <FormHome />
