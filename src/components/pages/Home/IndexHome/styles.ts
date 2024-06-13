@@ -3,14 +3,14 @@ import { media } from '../../../../theme/styles/media';
 
 
 
-export const HomeContainer = styled.div<{ isOpen: boolean }>`
+export const HomeContainer = styled.div<{ isopen: boolean }>`
   padding: 30px;
   transition: margin-left 0.3s ease;
-  margin-left: ${({ isOpen }) => (isOpen ? '250px' : '60px')};
+  margin-left: ${({ isopen }) => (isopen ? '250px' : '60px')};
   
 
   @media ${media.tablet} {
-   margin-left: ${({ isOpen }) => (isOpen ? '250px' : '0')};
+   margin-left: ${({ isopen }) => (isopen ? '250px' : '0')};
     padding: 20px;
     margin-left: 0;
 

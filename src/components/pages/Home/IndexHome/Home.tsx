@@ -4,9 +4,9 @@ import { HomeContainer } from "./styles";
 import { HomeProps } from "../../../../@types/HomeProps/HomeProps";
 import FormHome from "../FormHome/FormHome";
 
-const Home: React.FC<HomeProps> = ({ isOpen }) => {
+const Home: React.FC<HomeProps> = ({ isopen }) => {
   return (
-    <HomeContainer isOpen={isOpen}>
+    <HomeContainer isopen={isopen}>
       <h1>Home Page</h1>
       <ButtonHome label="Click Me" />
       <FormHome />

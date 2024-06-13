@@ -1,4 +1,4 @@
 
 export interface HomeProps {
-    isOpen: boolean;
+  isopen: boolean;
   }

@@ -2,8 +2,8 @@
 import styled from 'styled-components';
 import { media } from '../../../../theme/styles/media';
 
-export const IconWrapper = styled.div<{ isOpen: boolean }>`
-  left: ${props => props.isOpen ? '225px' : '37px'}; 
+export const IconWrapper = styled.div<{ isopen: boolean }>`
+  left: ${props => props.isopen ? '225px' : '37px'}; 
   position: fixed;
   display: block;
   top: 50%; 
@@ -13,10 +13,10 @@ export const IconWrapper = styled.div<{ isOpen: boolean }>`
   transition: left 0.18s ease-in-out;
 
   @media ${media.tablet} {
-    left: ${props => props.isOpen ? '230px' : '-20px'};
+    left: ${props => props.isopen ? '230px' : '-20px'};
   }
 
   @media ${media.phone} {
-    left: ${props => props.isOpen ? '180px' : '-20px'};
+    left: ${props => props.isopen ? '180px' : '-20px'};
   }
 `; 

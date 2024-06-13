@@ -19,11 +19,11 @@ export const menuItems = [
   {
     icon: peopleOutline,
     label: "PARCEIROS",
-    url: "#/parceiros",
+    url: "/",
   },
   {
     icon: cashOutline,
     label: "CONTAS",
-    url: "#/contas",
+    url: "#",
   },
 ];
