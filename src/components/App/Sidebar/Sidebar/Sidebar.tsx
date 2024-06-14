@@ -5,13 +5,13 @@ import SidebarIcon from "../SidebarIcon/SidebarIcon";
 import { SidebarProps } from "../../../../@types/SidebarProps/SidebarProps";
 import { SidebarContainer, SidebarMenuItems } from "./styles";
 
-export const Sidebar: FC<SidebarProps> = ({ isopen, toggleSidebar }) => {
+export const Sidebar: FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
-    <SidebarContainer $isopen={isopen}>
-      <SidebarIcon isopen={isopen} toggleSidebar={toggleSidebar} />
+    <SidebarContainer $isOpen={isOpen}>
+      <SidebarIcon isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {menuItems.map(({ label, url, icon }) => (
         <SidebarMenuItems key={url}>
-          <SidebarItems label={label} icon={icon} url={url} isopen={isopen} />
+          <SidebarItems label={label} icon={icon} url={url} isOpen={isOpen} />
         </SidebarMenuItems>
       ))}
     </SidebarContainer>

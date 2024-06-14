@@ -14,8 +14,8 @@ export const ItemsContainer = styled(Link)`
   } 
 `;
 
-export const Label = styled.span<{ $isopen: boolean }>`
-  display: ${(props) => (props.$isopen ? 'inline' : 'none')};
+export const Label = styled.span<{ $isOpen: boolean }>`
+  display: ${(props) => (props.$isOpen ? 'inline' : 'none')};
 `;
 
 export const IconWrapper = styled.span`

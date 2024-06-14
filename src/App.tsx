@@ -17,9 +17,9 @@ const App: React.FC = () => {
     <Router>
       <GlobalStyle />
       <Topo />
-      <Sidebar isopen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <Routes>
-        <Route path="/home" element={<Home isopen={isSidebarOpen} />} />
+        <Route path="/home" element={<Home isOpen={isSidebarOpen} />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>

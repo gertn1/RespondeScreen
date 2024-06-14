@@ -1,6 +1,6 @@
 
 export interface SidebarIconProps {
-    isopen: boolean;
+    isOpen: boolean;
     toggleSidebar: () => void;
   }
   

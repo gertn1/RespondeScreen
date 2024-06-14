@@ -4,9 +4,9 @@ import { HomeContainer } from "./styles";
 import { HomeProps } from "../../../../@types/HomeProps/HomeProps";
 import FormHome from "../FormHome/FormHome";
 
-const Home: FC<HomeProps> = ({ isopen }) => {
+const Home: FC<HomeProps> = ({ isOpen }) => {
   return (
-    <HomeContainer $isopen={isopen}>
+    <HomeContainer $isOpen={isOpen}>
       <h1>Home Page</h1>
       <ButtonHome label="Click Me" />
       <FormHome />
