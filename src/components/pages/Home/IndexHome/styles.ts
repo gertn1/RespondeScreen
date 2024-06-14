@@ -7,8 +7,9 @@ export const HomeContainer = styled.div<{ $isopen: boolean }>`
   margin-left: ${({ $isopen }) => ($isopen ? '250px' : '60px')};
   
   @media ${media.tablet} {
-    margin-left: ${({ $isopen }) => ($isopen ? '250px' : '0')};
-    padding: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
   }
 
   @media ${media.phone} {

@@ -7,6 +7,7 @@ export const IconWrapper = styled.div<{ $isopen: boolean }>`
   display: block;
   top: 50%; 
   transform: translateY(-50%);
+  z-index: 1001;
   cursor: pointer;
   padding: 10px;
   transition: left 0.18s ease-in-out;

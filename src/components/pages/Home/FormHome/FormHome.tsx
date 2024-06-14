@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 import {
   StyledForm,
@@ -9,7 +9,7 @@ import {
 } from "./styles";
 import ButtonHome from "../ButtonHome/ButtonHome";
 
-const FormHome: React.FC = () => {
+const FormHome: FC = () => {
   return (
     <StyledForm>
       <StyledFieldSet>

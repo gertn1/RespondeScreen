@@ -34,7 +34,6 @@ export const StyledFieldSet = styled.fieldset`
 
 export const StyledFieldWrapper = styled.div`
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 20px;
   background-color: red;
   padding: 10px;
@@ -64,6 +63,7 @@ export const StyledInput = styled.input`
     font-size: 1.1rem;
     width: 95%;
     align-self: center;
+   
   }
 
   @media ${media.phone} { 

@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 import { menuItems } from "../MenuSidebar/ItensSidebar";
 import SidebarItems from "../SidebarItems/SidebarItems";
 import SidebarIcon from "../SidebarIcon/SidebarIcon";
 import { SidebarProps } from "../../../../@types/SidebarProps/SidebarProps";
 import { SidebarContainer, SidebarMenuItems } from "./styles";
 
-export const Sidebar: React.FC<SidebarProps> = ({ isopen, toggleSidebar }) => {
+export const Sidebar: FC<SidebarProps> = ({ isopen, toggleSidebar }) => {
   return (
     <SidebarContainer $isopen={isopen}>
       <SidebarIcon isopen={isopen} toggleSidebar={toggleSidebar} />

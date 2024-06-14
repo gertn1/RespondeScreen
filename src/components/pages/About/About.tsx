@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
@@ -7,6 +7,7 @@ const AboutContainer = styled.div`
 
   h1 {
     margin-bottom: 20px;
+    color: red;
   }
 
   p {
@@ -14,11 +15,11 @@ const AboutContainer = styled.div`
   }
 `;
 
-const About: React.FC = () => {
+const About: FC = () => {
   return (
     <AboutContainer>
-      <h1>About Page</h1>
-      <p>This is the about page of the application.</p>
+      <h1>Pagina Sobre</h1>
+      <p>Esta é pagina Sobre.</p>
     </AboutContainer>
   );
 };
