@@ -9,7 +9,7 @@ A criação de interfaces de usuário eficientes e escaláveis é um desafio con
 ```sh
 npm install
 npm run dev
-
+```
 
 ## Desktop
 
@@ -22,6 +22,3 @@ npm run dev
 ### Celular
 
 ![alt text](image-1.png)
-
-
-```
